@@ -685,13 +685,16 @@ a:hover {
 
 .about-image {
     position: relative;
+    border-radius: var(--radius-xl);
+    border: 2px solid var(--border-color);
+    transition: all var(--transition-base);
 }
 
 .about-image img {
     width: 100%;
-    border-radius: var(--radius-xl);
-    border: 2px solid var(--border-color);
-    transition: all var(--transition-base);
+    height:100%;
+    
+    
 }
 
 .about-image img:hover {
