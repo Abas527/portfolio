@@ -429,7 +429,7 @@ a:hover {
 .hero-image-wrapper {
     position: relative;
     width: 100%;
-    max-width: 560px;
+    max-width: 520px;
     aspect-ratio: 16 / 10;
     min-height: 360px;
     height: auto;
@@ -646,10 +646,38 @@ a:hover {
 
     .hero-visual {
         height: 300px;
+        min-height: 300px;
+    }
+
+    .hero-image-wrapper {
+        max-width: 480px;
+        min-height: 300px;
+        aspect-ratio: 16 / 10;
     }
 
     .hero-title {
         font-size: var(--font-size-4xl) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-visual {
+        height: 280px;
+        min-height: 280px;
+    }
+
+    .hero-image-wrapper {
+        max-width: 100%;
+        min-height: 240px;
+        aspect-ratio: 16 / 10;
+    }
+
+    .hero-title {
+        font-size: var(--font-size-3xl) !important;
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-base);
     }
 }
 
